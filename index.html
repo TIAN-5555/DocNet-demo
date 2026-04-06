@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DocNet Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Login Page -->
+<div class="login-container">
+    <h1>DocNet</h1>
+    <h3>Doctor Login</h3>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- Dashboard (hidden first) -->
+<div class="dashboard" id="dashboard">
+    <h1>Welcome to DocNet</h1>
+
+    <div class="card">
+        <h2>Upcoming Event</h2>
+        <p>Medical Conference 2026</p>
+        <p>Date: May 10</p>
+        <button>Register</button>
+    </div>
+
+    <div class="card">
+        <h2>Your Profile</h2>
+        <p>Name: Dr. Smith</p>
+        <p>Speciality: Cardiology</p>
+    </div>
+</div>
+
+<script>
+function login() {
+    document.querySelector(".login-container").style.display = "none";
+    document.getElementById("dashboard").style.display = "block";
+}
+</script>
+
+</body>
+</html>
